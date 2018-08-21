@@ -58,7 +58,7 @@ public class UnitTest extends Mockito{
                   Assert.assertTrue(sw.toString().contains("Evert Sanchez"));
                   Assert.assertTrue(sw.toString().contains("Socrates"));
                   Assert.assertTrue(sw.toString().contains("18"));
-                  Assert.assertTrue(sw.toString().contains("Evert_Sanchez@infosys.com"));
+                  Assert.assertTrue(sw.toString().contains("Evert_Sanchez@infosys...com"));
                   //assertEquals("Evert_Sanchez@infosys.com", sw.toString("fullname"));
            }
 }
