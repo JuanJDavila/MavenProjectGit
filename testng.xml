@@ -6,4 +6,9 @@
       <class name="unitTestPackage.UnitTest"/>
     </classes>
   </test> <!-- Test -->
+    <test thread-count="5" name="TestING12">
+    <classes>
+      <class name="unitTestPackage.UnitTest"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
