@@ -46,7 +46,7 @@ public class UnitTest extends Mockito{
                   HttpServletResponse response = mock(HttpServletResponse.class); 
                   when(request.getParameter("fullname")).thenReturn("Evert Sanchez");
                   when(request.getParameter("address")).thenReturn("Socrates");
-                  when(request.getParameter("age")).thenReturn("18");
+                  when(request.getParameter("age")).thenReturn("19");
                   when(request.getParameter("email")).thenReturn("Evert_Sanchez@infosys.com");
                   
 
@@ -57,7 +57,7 @@ public class UnitTest extends Mockito{
                   myServlet.doPost(request, response);
                   Assert.assertTrue(sw.toString().contains("Evert Sanchez"));
                   Assert.assertTrue(sw.toString().contains("Socrates"));
-                  Assert.assertTrue(sw.toString().contains("18"));
+                  Assert.assertTrue(sw.toString().contains("19"));
                   Assert.assertTrue(sw.toString().contains("Evert_Sanchez@infosys.com"));
                   //assertEquals("Evert_Sanchez@infosys.com", sw.toString("fullname"));
            }
